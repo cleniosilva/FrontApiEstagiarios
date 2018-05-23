@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="jumbotron">
+
+        <a class="btn btn-success btn-group" href="#/!">Voltar  <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></a>
+
+        <h2>{{title}}</h2>
+
+
+        <form name="estagiarioForm">
+
+            <label for="codigo">Codigo:</label>
+            <input class="form-control" type="text" ng-model="estagiario.codigo" name="codigo" value="estagiario.codigo" ng-required="true">
+
+            <label for="nome">Nome:</label>
+            <input class="form-control" type="text" ng-model="estagiario.nome" name="nome" value="estagiario.nome"  ng-required="true">
+
+            <label for="faculdade">Faculdade:</label>
+            <input class="form-control" type="text" ng-model="estagiario.faculdade" name="faculdade" value="estagiario.faculdade"  ng-required="true">
+
+            <label for="curso">Curso:</label>
+            <input class="form-control" type="text" ng-model="estagiario.curso" name="curso" value="estagiario.curso"  ng-required="true">
+
+            <label for="email">E-mail:</label>
+            <input class="form-control" type="email" ng-model="estagiario.email" name="email" value="estagiario.email" ng-required="true">
+
+            <label for="telefone">Telefone:</label>
+            <input class="form-control" type="text" ng-model="estagiario.telefone" name="telefone" value="estagiaeio.telefone"  ng-required="true">
+        </form>
+
+        <button class="btn btn-primary btn-block" ng-click="deletarEstagiario(estagiario.codigo)" ng-disabled="estagiarioForm.$invalid">Deletar Estagiario</button>
+    </div>
+</div>

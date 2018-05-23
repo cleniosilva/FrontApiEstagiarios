@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="jumbotron">
+
+        <a class="btn btn-success btn-group" href="#/!">Voltar  <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></a>
+
+        <h2>{{title}}</h2>
+
+        <form name="estagiarioForm">
+            <label for="nome">Nome:</label>
+            <input class="form-control" type="text" ng-model="estagiario.nome" name="nome" placeholder="Nome" ng-required="true">
+
+            <label for="faculdade">Faculdade:</label>
+            <input class="form-control" type="text" ng-model="estagiario.faculdade" name="faculdade" placeholder="Faculdade" ng-required="true">
+
+            <label for="curso">Curso:</label>
+            <input class="form-control" type="text" ng-model="estagiario.curso" name="curso" placeholder="Curso" ng-required="true">
+
+            <label for="email">E-mail:</label>
+            <input class="form-control" type="email" ng-model="estagiario.email" name="email" placeholder="E-mail" ng-required="true">
+
+            <label for="telefone">Telefone:</label>
+            <input class="form-control" type="text" ng-model="estagiario.telefone" name="telefone" placeholder="telefone" ng-required="true">
+        </form>
+
+        <button class="btn btn-primary btn-block" ng-click="adicionarEstagiario(estagiario)" ng-disabled="estagiarioForm.$invalid">Adicionar Estagiario</button>
+    </div>
+</div>
